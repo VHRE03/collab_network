@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'user',
     'research_publication',
+    'collaboration_request',
 ]
 
 MIDDLEWARE = [
