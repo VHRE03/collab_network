@@ -1,3 +1,6 @@
 from django.contrib import admin
+from .models import ResearchPublication
 
-# Register your models here.
+@admin.register(ResearchPublication)
+class ResearchPublicationAdmin(admin.ModelAdmin):
+    list_display = ('title', 'date_published', 'status', 'category', 'author')
